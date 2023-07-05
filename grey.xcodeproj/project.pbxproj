@@ -1,0 +1,408 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9F1C993C23AA9F120030FE58 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1C993B23AA9F120030FE58 /* Client.swift */; };
+		9F39529123AC8B8F00368EB8 /* Webhook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F39529023AC8B8F00368EB8 /* Webhook.swift */; };
+		9F6F0BA923A698E7005F9D2D /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6F0BA823A698E7005F9D2D /* Task.swift */; };
+		9F6F0BAB23A69ABA005F9D2D /* Variti.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6F0BAA23A69ABA005F9D2D /* Variti.swift */; };
+		9F6F0BAD23A69AFF005F9D2D /* Proxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6F0BAC23A69AFF005F9D2D /* Proxy.swift */; };
+		9F6F0BAF23A69CF7005F9D2D /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6F0BAE23A69CF7005F9D2D /* Logger.swift */; };
+		9F6F0BB223A69E8C005F9D2D /* Rainbow in Frameworks */ = {isa = PBXBuildFile; productRef = 9F6F0BB123A69E8C005F9D2D /* Rainbow */; };
+		9F6F0BB523A6E986005F9D2D /* Kitura in Frameworks */ = {isa = PBXBuildFile; productRef = 9F6F0BB423A6E986005F9D2D /* Kitura */; };
+		9F6F0BB823A6E9BB005F9D2D /* HeliumLogger in Frameworks */ = {isa = PBXBuildFile; productRef = 9F6F0BB723A6E9BB005F9D2D /* HeliumLogger */; };
+		9F6F0BBB23A6EA28005F9D2D /* Kitura-WebSocket in Frameworks */ = {isa = PBXBuildFile; productRef = 9F6F0BBA23A6EA28005F9D2D /* Kitura-WebSocket */; };
+		9F6F0BBD23A6EA5A005F9D2D /* TaskService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6F0BBC23A6EA5A005F9D2D /* TaskService.swift */; };
+		9F990B8A23A5C9B8001DA13E /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F990B8923A5C9B8001DA13E /* main.swift */; };
+		9FA78AFE23A88CAD007C7F8C /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = 9FA78AFD23A88CAD007C7F8C /* SwiftSoup */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9F990B8423A5C9B8001DA13E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		9F1C993B23AA9F120030FE58 /* Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
+		9F39529023AC8B8F00368EB8 /* Webhook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webhook.swift; sourceTree = "<group>"; };
+		9F6F0BA823A698E7005F9D2D /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		9F6F0BAA23A69ABA005F9D2D /* Variti.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Variti.swift; sourceTree = "<group>"; };
+		9F6F0BAC23A69AFF005F9D2D /* Proxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Proxy.swift; sourceTree = "<group>"; };
+		9F6F0BAE23A69CF7005F9D2D /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		9F6F0BBC23A6EA5A005F9D2D /* TaskService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskService.swift; sourceTree = "<group>"; };
+		9F990B8623A5C9B8001DA13E /* grey */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = grey; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F990B8923A5C9B8001DA13E /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9F990B8323A5C9B8001DA13E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F6F0BBB23A6EA28005F9D2D /* Kitura-WebSocket in Frameworks */,
+				9F6F0BB523A6E986005F9D2D /* Kitura in Frameworks */,
+				9F6F0BB823A6E9BB005F9D2D /* HeliumLogger in Frameworks */,
+				9F6F0BB223A69E8C005F9D2D /* Rainbow in Frameworks */,
+				9FA78AFE23A88CAD007C7F8C /* SwiftSoup in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9F990B7D23A5C9B8001DA13E = {
+			isa = PBXGroup;
+			children = (
+				9F990B8823A5C9B8001DA13E /* grey */,
+				9F990B8723A5C9B8001DA13E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9F990B8723A5C9B8001DA13E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9F990B8623A5C9B8001DA13E /* grey */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9F990B8823A5C9B8001DA13E /* grey */ = {
+			isa = PBXGroup;
+			children = (
+				9F990B8923A5C9B8001DA13E /* main.swift */,
+				9F39529023AC8B8F00368EB8 /* Webhook.swift */,
+				9F1C993B23AA9F120030FE58 /* Client.swift */,
+				9F6F0BA823A698E7005F9D2D /* Task.swift */,
+				9F6F0BAA23A69ABA005F9D2D /* Variti.swift */,
+				9F6F0BAC23A69AFF005F9D2D /* Proxy.swift */,
+				9F6F0BAE23A69CF7005F9D2D /* Logger.swift */,
+				9F6F0BBC23A6EA5A005F9D2D /* TaskService.swift */,
+			);
+			path = grey;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9F990B8523A5C9B8001DA13E /* grey */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F990B8D23A5C9B8001DA13E /* Build configuration list for PBXNativeTarget "grey" */;
+			buildPhases = (
+				9F990B8223A5C9B8001DA13E /* Sources */,
+				9F990B8323A5C9B8001DA13E /* Frameworks */,
+				9F990B8423A5C9B8001DA13E /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = grey;
+			packageProductDependencies = (
+				9F6F0BB123A69E8C005F9D2D /* Rainbow */,
+				9F6F0BB423A6E986005F9D2D /* Kitura */,
+				9F6F0BB723A6E9BB005F9D2D /* HeliumLogger */,
+				9F6F0BBA23A6EA28005F9D2D /* Kitura-WebSocket */,
+				9FA78AFD23A88CAD007C7F8C /* SwiftSoup */,
+			);
+			productName = grey;
+			productReference = 9F990B8623A5C9B8001DA13E /* grey */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9F990B7E23A5C9B8001DA13E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Hasan Gondal";
+				TargetAttributes = {
+					9F990B8523A5C9B8001DA13E = {
+						CreatedOnToolsVersion = 11.3;
+					};
+				};
+			};
+			buildConfigurationList = 9F990B8123A5C9B8001DA13E /* Build configuration list for PBXProject "grey" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9F990B7D23A5C9B8001DA13E;
+			packageReferences = (
+				9F6F0BB023A69E8C005F9D2D /* XCRemoteSwiftPackageReference "Rainbow" */,
+				9F6F0BB323A6E986005F9D2D /* XCRemoteSwiftPackageReference "Kitura" */,
+				9F6F0BB623A6E9BB005F9D2D /* XCRemoteSwiftPackageReference "HeliumLogger" */,
+				9F6F0BB923A6EA28005F9D2D /* XCRemoteSwiftPackageReference "Kitura-WebSocket" */,
+				9FA78AFC23A88CAD007C7F8C /* XCRemoteSwiftPackageReference "SwiftSoup" */,
+			);
+			productRefGroup = 9F990B8723A5C9B8001DA13E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9F990B8523A5C9B8001DA13E /* grey */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9F990B8223A5C9B8001DA13E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F6F0BAF23A69CF7005F9D2D /* Logger.swift in Sources */,
+				9F6F0BAD23A69AFF005F9D2D /* Proxy.swift in Sources */,
+				9F1C993C23AA9F120030FE58 /* Client.swift in Sources */,
+				9F6F0BBD23A6EA5A005F9D2D /* TaskService.swift in Sources */,
+				9F6F0BAB23A69ABA005F9D2D /* Variti.swift in Sources */,
+				9F39529123AC8B8F00368EB8 /* Webhook.swift in Sources */,
+				9F6F0BA923A698E7005F9D2D /* Task.swift in Sources */,
+				9F990B8A23A5C9B8001DA13E /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		9F990B8B23A5C9B8001DA13E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9F990B8C23A5C9B8001DA13E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		9F990B8E23A5C9B8001DA13E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		9F990B8F23A5C9B8001DA13E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9F990B8123A5C9B8001DA13E /* Build configuration list for PBXProject "grey" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F990B8B23A5C9B8001DA13E /* Debug */,
+				9F990B8C23A5C9B8001DA13E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9F990B8D23A5C9B8001DA13E /* Build configuration list for PBXNativeTarget "grey" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F990B8E23A5C9B8001DA13E /* Debug */,
+				9F990B8F23A5C9B8001DA13E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9F6F0BB023A69E8C005F9D2D /* XCRemoteSwiftPackageReference "Rainbow" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Rainbow";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.1.5;
+			};
+		};
+		9F6F0BB323A6E986005F9D2D /* XCRemoteSwiftPackageReference "Kitura" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/IBM-Swift/Kitura";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.9.1;
+			};
+		};
+		9F6F0BB623A6E9BB005F9D2D /* XCRemoteSwiftPackageReference "HeliumLogger" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/IBM-Swift/HeliumLogger";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.9.0;
+			};
+		};
+		9F6F0BB923A6EA28005F9D2D /* XCRemoteSwiftPackageReference "Kitura-WebSocket" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/IBM-Swift/Kitura-WebSocket";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.1.2;
+			};
+		};
+		9FA78AFC23A88CAD007C7F8C /* XCRemoteSwiftPackageReference "SwiftSoup" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scinfu/SwiftSoup";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.2.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9F6F0BB123A69E8C005F9D2D /* Rainbow */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9F6F0BB023A69E8C005F9D2D /* XCRemoteSwiftPackageReference "Rainbow" */;
+			productName = Rainbow;
+		};
+		9F6F0BB423A6E986005F9D2D /* Kitura */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9F6F0BB323A6E986005F9D2D /* XCRemoteSwiftPackageReference "Kitura" */;
+			productName = Kitura;
+		};
+		9F6F0BB723A6E9BB005F9D2D /* HeliumLogger */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9F6F0BB623A6E9BB005F9D2D /* XCRemoteSwiftPackageReference "HeliumLogger" */;
+			productName = HeliumLogger;
+		};
+		9F6F0BBA23A6EA28005F9D2D /* Kitura-WebSocket */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9F6F0BB923A6EA28005F9D2D /* XCRemoteSwiftPackageReference "Kitura-WebSocket" */;
+			productName = "Kitura-WebSocket";
+		};
+		9FA78AFD23A88CAD007C7F8C /* SwiftSoup */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9FA78AFC23A88CAD007C7F8C /* XCRemoteSwiftPackageReference "SwiftSoup" */;
+			productName = SwiftSoup;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 9F990B7E23A5C9B8001DA13E /* Project object */;
+}
